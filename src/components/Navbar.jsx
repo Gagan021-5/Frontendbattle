@@ -36,7 +36,7 @@ const Navbar = ({ toggleDarkMode, darkMode, activeSection }) => {
           {/* Theme Toggle */}
           <button
             onClick={toggleDarkMode}
-            className="ml-2 p-2 rounded-full hover:bg-purple-500/20 transition text-purple-400"
+            className="ml-2 p-2 rounded-full hover:bg-purple-500/20 transition cursor-pointer text-purple-400"
           >
             {darkMode ? <Sun size={20} /> : <Moon size={20} />}
           </button>
