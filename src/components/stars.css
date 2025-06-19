@@ -1,0 +1,22 @@
+
+.stars-container {
+  background: #000;
+  background-image:
+    radial-gradient(white 1px, transparent 1px),
+    radial-gradient(white 1px, transparent 1px);
+  background-size: 100px 100px;
+  background-position: 0 0, 50px 50px;
+  animation: moveStars 80s linear infinite;
+  opacity: 0.2;
+}
+
+
+
+@keyframes moveStars {
+  from {
+    background-position: 0 0, 50px 50px;
+  }
+  to {
+    background-position: -10000px 10000px, -9950px 10050px;
+  }
+}
